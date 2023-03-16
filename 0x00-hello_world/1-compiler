@@ -1,0 +1,2 @@
+#!/bin/bash
+OUTPUT="$(basename "$CFILE" .c).o"; gcc -c "$CFILE" -o "$OUTPUT"
