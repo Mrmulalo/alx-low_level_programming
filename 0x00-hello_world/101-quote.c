@@ -14,7 +14,6 @@ int main(void)
 	strcpy(new_msg, msg);
 	strcat(new_msg, add);
 
-	write(STDERR_FILENO, new_msg, sizeof(new_msg) - 1);
+	write(STDERR_FILENO, new_msg, sizeof(new_msg) - 2);
 	return (1);
 }
-
