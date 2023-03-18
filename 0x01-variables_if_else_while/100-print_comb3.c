@@ -13,17 +13,21 @@ int main(void)
 	{
 		for (j = i; j < 10; j++)
 		{
-			putchar('0' + i);
-			putchar('0' + j);
-			if (i == 9 && j == 9)
+			if (i != j)
 			{
-				continue;
+				putchar('0' + i);
+				putchar('0' + j);
+			
+				if (i == 9 && j == 9)
+				{	
+					continue;
 
-			}
-			else
-			{
-				putchar(',');
-				putchar(' ');
+				}
+				else
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 
 		}
