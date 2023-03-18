@@ -1,32 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Description: Prints the alphabet in lowercase and uppercase,
- *              followed by a new line, using only putchar function.
- * Return: Always 0 (Success)
- */
-
+* main - Entry point
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	char letter = 'a';
+	char ch;
 
-	while (letter <= 'z')
-	{
-		putchar(letter);
-		letter++;
-	}
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+	for (ch = 'A'; ch <= 'Z'; ch++)
+		putchar(ch);
 
-	letter = 'A';
-
-	while (letter <= 'Z')
-	{
-		putchar(letter);
-		letter++;
-												        	}
-	
 	putchar('\n');
-
 	return (0);
 }
-
