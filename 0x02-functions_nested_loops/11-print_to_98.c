@@ -1,5 +1,31 @@
 #include "main.h"
 /**
+ * printint - print an integer using  _putchar
+ * @n: number to be printed
+ * Return: void
+*/
+void printint(int n)
+{
+	int digit;
+	int num;
+
+	if (n < 0)
+	{
+		num = -n;
+		_putchar('-');
+	}
+	else
+		num = n;
+
+	while (num > 0)
+	{
+		digit = num % 10;
+		_putchar(digit + '0');
+		num /= 10;
+	}
+}
+
+/**
  * print_to_98 - prints all natural numbers from n to 98.
  * @n: starting point.
  * Return: void
