@@ -1,4 +1,5 @@
 #include "main.h"
+#include "print_integer.c"
 /**
  * printinte - print an integer using  _putchar
  * @n: number to be printed
