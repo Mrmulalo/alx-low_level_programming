@@ -4,11 +4,12 @@
  * @n: number to be printed
  * Return: void
 */
-void printint(int n)
+void printinte(int n)
 {
 	int digit;
 	int num;
-
+	int count = 0;
+	
 	if (n < 0)
 	{
 		num = -n;
@@ -16,6 +17,15 @@ void printint(int n)
 	}
 	else
 		num = n;
+
+	int num2 = num;
+
+	while (num2 > 0)
+	{
+		num2 /= 10;
+		count++;
+	}
+
 
 	while (num > 0)
 	{
