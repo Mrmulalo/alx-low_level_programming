@@ -9,6 +9,7 @@ void printint(int n)
 	int digit;
 	int num;
 	int count = 0;
+	int num2;
 
 	if (n < 0)
 	{
@@ -18,7 +19,7 @@ void printint(int n)
 	else
 		num = n;
 
-	int num2 = num;
+	num2 = num;
 
 	while (num2 > 0)
 	{
