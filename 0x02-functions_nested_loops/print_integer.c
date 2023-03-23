@@ -26,7 +26,7 @@ void printint(int n)
 		num2 /= 10;
 		count++;
 	}
-
+	int *arr = (int*) malloc(count * sizeof(int));
 
 	while (num > 0)
 	{
