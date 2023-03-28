@@ -23,6 +23,7 @@ int _atoi(char *s)
 			sign *= -1;
 		else if (s[i] >= '0' && s[i] <= '9')
 		{
+			prev_num = num;
 			num = num * 10 + (s[i] - '0');
 			if (prev_num > num && sign == 1)
 				return (0);
